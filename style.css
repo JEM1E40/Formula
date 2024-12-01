@@ -1,0 +1,98 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Preto suave para evitar cansaço visual */
+    color: #FFFFFF; /* Contraste confortável */
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #121212; /* Preto suave */
+    color: #FFFFFF; /* Texto em branco para contraste */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #FF0000; /* Detalhe em vermelho minimalista */
+}
+
+header .logo img {
+    width: 150px; /* Tamanho menor para manter elegância */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-weight: 300; /* Fonte mais fina para um estilo moderno */
+    color: #AAAAAA; /* Cinza claro para suavidade */
+    margin-top: 10px;
+}
+
+/* Galeria de Vídeos */
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.video-card {
+    background: #1E1E1E; /* Preto suave para destacar os vídeos */
+    border: 2px solid #FF0000; /* Bordas vermelhas para energia */
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.3); /* Glow vermelho */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+    transform: scale(1.05); /* Pequeno zoom no hover */
+    box-shadow: 0px 6px 20px rgba(255, 0, 0, 0.6); /* Aumenta o brilho */
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 170px;
+    border-radius: 8px;
+}
+
+.video-card h2 {
+    font-size: 1rem;
+    color: #FFD700; /* Amarelo para atrair atenção */
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+/* Rodapé */
+footer {
+    background: #1C1C1C;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 3px solid #FF0000;
+    position: relative;
+}
+
+footer .checkered-flag {
+    width: 100%;
+    height: 20px;
+    background: repeating-linear-gradient(
+        45deg,
+        #FFFFFF,
+        #FFFFFF 10px,
+        #000000 10px,
+        #000000 20px
+    );
+    margin-bottom: 10px;
+}
